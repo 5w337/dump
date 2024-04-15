@@ -3,7 +3,7 @@ int DIN = 7;
 int CLK = 6;
 int CS = 5;
 
-byte starandCrescent[] = {
+byte nameproject[] = {
 #This is the line(s) where you need to enter the code to turn on the dot matrix LEDs.
 #like this;
   0b00000000
@@ -18,7 +18,7 @@ max7219.clearDisplay (0);
 void loop() {
 for(int shift = 0; shift < 8; shift++) {
   for (int i = 0;i < 8; i++) {
-    max7219.setRow(0, i, startandCrescent[(i + shift) % 8]);
+    max7219.setRow(0, i, nameproject[(i + shift) % 8]);
 }
 delay(120);
 }
