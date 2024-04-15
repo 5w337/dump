@@ -4,13 +4,8 @@ int CLK = 6;
 int CS = 5;
 
 byte starandCrescent[] = {
-  0b00111110,
-  0b01111111,
-  0b01000001,
-  0b01100011,
-  0b00001000,
-  0b00011100,
-  0b00001000,
+#This is the line(s) where you need to enter the code to turn on the dot matrix LEDs.
+#like this;
   0b00000000
 };
 LedControl max7219 = LedControl (7,6,5,1);
